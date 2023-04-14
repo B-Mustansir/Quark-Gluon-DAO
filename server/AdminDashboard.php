@@ -26,8 +26,8 @@ public id
 
     <h1>Add Event</h1>
     <form action="AddEventAction.php" enctype="multipart/form-data" method="POST">
-        <input type="text" placeholder="Organization name" name="org_name" /><br><br>
-        <input type="text" placeholder="Event Title" name="event_name" /><br><br>
+        <input type="text" placeholder="Organization name" name="org_name" id="_org_name"/><br><br>
+        <input type="text" placeholder="Event Title" name="event_name" id="_course_name"/><br><br>
         <textarea placeholder="Event Description" name="event_desc"></textarea><br><br>
         <input type="text" placeholder="Designation One" name="desg_one" /><br><br>
         <input type="text" placeholder="Designated Person One" name="desg_person_one" /><br><br>
@@ -36,7 +36,7 @@ public id
         <input type="text" placeholder="Designated Person Two" name="desg_person_two" /><br><br>
         Designated Person Two Signature <input type="file" name="desg_person_two_sign" /><br><br>
         Organization Logo <input type="file" name="org_logo" /><br><br>
-        <input type="number" placeholder="Validity Days" name="validity_days" /><br><br>
+        <input type="number" placeholder="Validity Days" name="validity_days" id="_expiration_date"/><br><br>
         <input type="submit" name="submit" value="submit">
     </form>
 
@@ -65,9 +65,10 @@ public id
             ?>
 
         </select><br><br>
-        <input type="text" placeholder="candidate name" name="cand_name" /><br><br>
-        <input type="text" placeholder="Candidate's Public Id" name="public_id" /><br><br>
-        <input type="submit" name="submit" value="submit">
+        <input type="text" placeholder="candidate name" name="cand_name" id="_candidate_name"/><br><br>
+        <input type="text" placeholder="Candidate's Public Id" name="public_id" id="_id"/><br><br>
+        <input type="submit" name="submit" value="submit" onclick="generateCertificate();">
     </form>
 </body>
+    <script src="../certificate-form-b/js/contract.js"></script>
 </html>
