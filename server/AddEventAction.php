@@ -25,8 +25,8 @@
     //File size
     $desg_one_size = $_FILES["desg_person_one_sign"]["size"];
     //putting the address on which we wanted to put our image
-    $desg_one_folder = "DesignationPersonOne/".$desg_one_filename;
-    $desg_one_folder_exe = "DesignationPersonOne/".$desg_one_filename;
+    $desg_one_folder = "certificate-generation/certificate-generation/".$desg_one_filename;
+    $desg_one_folder_exe = $desg_one_filename;
     //moving image from temperory file to the file which we puted
     move_uploaded_file($desg_one_tmpname,$desg_one_folder);
 
@@ -37,8 +37,8 @@
     //File size
     $desg_two_size = $_FILES["desg_person_two_sign"]["size"];
     //putting the address on which we wanted to put our image
-    $desg_two_folder = "DesignationPersonTwo/".$desg_two_filename;
-    $desg_two_folder_exe = "DesignationPersonTwo/".$desg_two_filename;
+    $desg_two_folder = "certificate-generation/certificate-generation/".$desg_two_filename;
+    $desg_two_folder_exe = $desg_two_filename;
     //moving image from temperory file to the file which we puted
     move_uploaded_file($desg_two_tmpname,$desg_two_folder);
 
@@ -51,8 +51,8 @@
     //File size
     $org_logo_size = $_FILES["org_logo"]["size"];
     //putting the address on which we wanted to put our image
-    $org_logo_folder = "OrgLogo/".$org_logo_filename;
-    $org_logo_folder_exe = "OrgLogo/".$org_logo_filename;
+    $org_logo_folder = "certificate-generation/certificate-generation/".$org_logo_filename;
+    $org_logo_folder_exe = $org_logo_filename;
     //moving image from temperory file to the file which we puted
     move_uploaded_file($org_logo_tmpname,$org_logo_folder);
     
